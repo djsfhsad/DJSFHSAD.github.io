@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>23201012111-吴清琳</title>
+    <script src="./font/iconfont.js"></script>
+</head>
+<style>
+    .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+    .navbar {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 10px;
+        background: #ffffff;
+        position: sticky; 
+        top: 0; 
+        z-index: 1000; 
+       height: 30px;
+       
+    }
+    .navbar img {
+        height: 40px; 
+        margin-left: 10px;
+    }
+    .navbar .icon {
+        font-size: 24px; 
+        cursor: pointer; 
+    }
+    .navbar .icon1 {
+        font-size: 50px; 
+        cursor: pointer; 
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .navbar .text {
+        font-size: 16px; 
+        color: #000000; 
+        margin-left: 20px;
+    }
+    .navbar .button {
+        padding: 5px 10px;
+        border: 1px solid #ff4500; 
+        color: #ff4500; 
+        background: #ffffff; 
+        cursor: pointer; 
+        margin-left: auto; 
+        border-radius: 15px;
+    
+    }
+    .tupian{
+        display: flex;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        top: 0%;
+        
+
+    }
+
+    .tuop{
+        margin-top: 0;
+    margin-bottom: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .tuop img {
+    width: 100%;
+    width: calc(100% + 10px);
+    height: 400px;
+   
+   
+
+}
+    .ffa{
+      background-color: #000000;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        height: 50px;
+        margin: 0;
+    }
+    .ffb {
+    position: relative; 
+    top: -8px; 
+    background-color: #000000;
+    text-align: center;
+    height: 50px;
+    margin-top: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    line-height: 20px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+ul{
+    width: 100%;
+    margin-left: -25px;
+}
+.cn{
+    font-weight: bold;
+    font-size: 25px;
+   
+}
+.wz{
+    color: rgba(247, 76, 76, 0.353);
+    width: 100%;
+}
+/* 旅顺口盒子 */
+.tty-card {
+            background: #F6F6F6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            
+        }
+        
+        .tty-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .tty-image {
+            border-radius: 50%;
+            margin-right: 10px;
+          
+        }
+        
+        .tty-stats {
+            margin-right: 10px;
+            font-size: 10px;
+            color: #808080;
+        }
+        .username {
+            display: inline; 
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .username-and-badge {
+            display: inline; 
+        }
+
+        .button1 {
+        
+            border: none;
+            padding: 10px 20px;
+            font-size: 5px;
+            cursor: pointer;
+            height: 35px;
+        }
+        /* 相关编辑盒子 */
+.aaab{
+    font-size: 7px;
+    color: #808080;
+    margin-left: 30px;
+
+}
+.ppm{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.hezi{
+    display: flex;
+    width: 100%;
+}
+.hengxian{
+    color: #a09f9f;
+    height: 20px;
+    width: 100%;
+    text-align: center; 
+}
+.pl{
+    font-weight: 500;
+    font-size: 30px;
+    width: 100%;
+}
+/* 评论区上层 */
+.rre{
+    display: flex;
+    align-items: center;
+    background-color: #F7F7F7;
+    border-radius: 20px;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); 
+}
+.rre input[type="text"] {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px; 
+    width: 80%; 
+}
+.ddca{
+   text-align: center;
+    width: 50px;
+}
+.kkjl{
+    width: 600px;
+    height: 600px;
+
+}
+.kkjl img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* 覆盖整个容器，多余的部分会被裁剪 */
+    text-align: center;
+}
+/* 页脚开始 */
+.uui-bar {
+             position: sticky; 
+            bottom: 0; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 15px;
+            width: 100%;
+            margin: auto;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .uui-input {
+            flex-grow: 1;
+            border: none;
+            padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 15px;
+            background-color: #ffffff;
+        }
+
+        .uui-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .uui-icon {
+            margin: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .uui-icon i {
+            margin-right: 5px;
+          
+        }
+
+        .uui-icon span {
+            font-size: 0.9em;
+        }
+        .hezi{
+            background-color: #F6F6F6;
+        }
+</style>
+<body>
+    <div class="navbar">
+        <a href="./index.html">
+        <div class="icon">&lt;</div> </a>
+        <div class="yy">
+            <img src="./img/666.jpg">
+        </div>
+        <div class="text">陈泽</div>
+        <div class="button">关注</div>
+        <div class="icon1">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-comment-w"></use>
+            </svg>
+        </div>
+    </div>
+    <div class="tuopian">
+        <div class="ffa"> </div>
+        <div class="tuop"><img src="./img/668.jpg"> </div>
+        <div class="ffb"></div>    
+       
+    </div>
+    <div class="dahezi">
+        <ul>
+            <li class="cn">大连坐上这趟看海地铁!</li>
+            <li>在大连做了一趟看海地铁，真的好治愈!</li>
+            <li>阳光刚好，微风不燥</li>
+            <li>坐上地铁12号线，从河口出发，搭配塔河湾站</li>
+            <li>下车就可以拍拍拍了</li>
+            <li>地铁行驶进入站台，还有纯白色的地铁站</li>
+            <li>塔河湾车站是非常值得拍摄的</li>
+            <li>治愈系</li>
+        </ul>
+        <div class="wz">#最美的风景在路上  
+            #最美的风景在路上而不在终点
+            #去看可以治愈一切的海
+            #休娱玩乐体验官
+            #城市玩乐微型度假</div>
+    </div>
+   
+        <div class="tty-card">
+            <div class="tty-info">
+                <img class="tty-image" src="./img/552.jpg"  width="40" height="40">
+                <div>
+                    <div class="username-and-badge">
+                        <span class="username">旅顺口区 |塔河湾地铁站</span>
+                        
+                    </div>
+                    <div class="tty-stats">快看看这里发生什么</div>
+                </div>
+            </div>
+            <button class="button1">去看看 ></button>
+   </div>
+   <div class="hezi">
+    <div class="ppm">
+        <img class="tty-image" src="./img/512.jpg"  width="20" height="20" >相关搜索：大连轻轨>
+        <div>
+            <div class="aaab">
+                编辑于&nbsp;&nbsp;8月30日 22.21&nbsp;&nbsp;天津</div>
+        </div>
+    </div>
+</div>
+<div class="hengxian">_________________________________________________________________________________</div>
+<div class="pl">评论</div>
+<div>
+</div>
+
+</div>
+<div class="rre">
+    <div class="ddca"><svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-dianzan"></use>
+      </svg></div>
+    <div><input type="text" placeholder="请说点什么吧" ></div>
+</div>
+<div>
+
+</div>
+<div class="kkjl">
+    <img src="./img/微信图片_20231201225406.jpg">
+</div>
+<!-- 页脚开始 -->
+<div class="uui-bar">
+    <input type="text" class="uui-input" placeholder="说点什么吧~" id="bbu">
+    <div class="uui-icons">
+        <div class="uui-icon">
+            <i class="your-like-icon-class">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true"  onclick="this.style.color = '#fb7649';">
+                        <use xlink:href="#icon-dianzan
+                        "></use>
+                      </svg>
+            </i> 
+            <span>59</span>
+        </div>
+        <div class="uui-icon">
+            <i class="your-star-icon-class">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true"  onclick="this.style.backgroundColor = '#fb7649';">
+                        <use xlink:href="#icon-shoucang
+                        "></use>
+                      </svg>
+            </i> 
+            <span>38</span>
+        </div>
+        <div class="uui-icon">
+            <i class="your-comment-icon-class">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true"  onclick="this.style.backgroundColor = '#fb7649';">
+                        <use xlink:href="#icon-pinglun"></use>
+                      </svg>
+            </i>
+            <span>13</span>
+        </div>
+    </div>
+</div>
+<script>
+    bbu.addEventListener("click",function(){
+        alert("您点错了，不好意思");
+        e.stopPropagation();
+    });
+</script>
+</body>
+</html>

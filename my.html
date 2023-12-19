@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>23201012111-吴清琳</title>
+    <script src="./font/iconfont.js"></script>
+    <style>
+        .icon {
+         width: 1em;
+         height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+          }
+        .kkd-card {
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .kkd-info {
+            display: flex;
+            align-items: center;
+        }
+        
+        .kkd-image {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        .kkd-stats {
+            margin-right: 10px;
+            font-size: 14px;
+            color: #808080;
+        }
+        
+        .level-badge {
+            background: #FFD700;
+            border-radius: 10px;
+            padding: 5px 10px;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .username {
+            display: inline; 
+        }
+
+        .username-and-badge {
+            display: inline; 
+        }
+
+        .button {
+            background: #FEEBE5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 35px;
+        }
+        /* 第一条 */
+        /* 最开头的盒子 */
+        .luosi{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 400px;
+        }/* 开头盒子结束 */
+        /* 第二个盒子 */
+        .badge-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff; 
+            padding: 10px;
+            border-radius: 10px; 
+            max-width: 600px; 
+            margin: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+          
+        }
+        .badge {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            padding: 5px;
+        }
+        .badge .icon {
+            width: 30px;
+            height: 50px;
+            margin-right: 10px; 
+        }
+        .text-container {
+            display: flex;
+            flex-direction: column; 
+        }
+        .text {
+            color: #555;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+        .sub-text {
+            color: #777;
+            font-size: 12px;
+        }/* 第三个盒子结束 */
+        /* 第四个盒子开始 */
+        /* 来自于8-7上图下文的粘贴 */
+        .icon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+          
+        }
+        .icon-item {
+            flex-basis: 25%; 
+            margin: 10px 0; 
+        }
+        .icon-item p {
+            font-size: 14px;
+            color: #808080;
+            margin: 0;
+        }
+        /* 盒子结束 */
+        /* 轮播图开始 */
+        .icon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .icon-item {
+            flex-basis: 25%; 
+            margin: 10px 0; 
+           
+        }
+        .icon-item p {
+            font-size: 14px;
+            color: #808080;
+            margin: 0;
+        }
+        .carousel {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        margin-bottom: 34px; 
+    }
+.qer-mll {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    
+}
+
+.slide {
+    scroll-snap-align: start;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+}
+
+.carousel-indicators {
+        text-align: center;
+        position: relative;
+        bottom: 30px; 
+    }
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #808080;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #fb7649;
+}
+/* 你喜欢盒子 */
+.text-with-lines {
+ 
+  text-align: center;
+  color: #808080;
+  font-size: 16px;
+  line-height: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: -50px; 
+ 
+
+}
+
+.text-with-lines:before,
+.text-with-lines:after {
+  content: '';
+  display: inline-block;
+  width: 15%; 
+  height: 1px; 
+  vertical-align: middle;
+  background-color: #808080;
+}
+.text-with-lines:before {
+  margin-right: 20px; 
+}
+.text-with-lines:after {
+  margin-left: 20px; 
+}
+/* 我喜欢盒子 */
+/* 下方盒子 */
+.card-big {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 16px; 
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    width: calc(50% - 8px); 
+    width: 45%;
+  }
+
+  .card-container img {
+    width: 100%; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
+  }
+
+  .card-content {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .card-rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-rating-stars {
+    color: #FFA500;
+    margin-right: 8px;
+  }
+
+  .card-price {
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .card-vvn {
+    font-size: 14px;
+    color: #555;
+    margin-left: 70px;
+  }/* 下导航开始 */
+  .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  
+  overflow: hidden;
+  font-size: 24px;
+    margin: 5px 0;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+}
+  
+        body,ul,p{
+            
+            padding: 0;
+            margin: 0;
+
+            
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .nav{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            background-color: #ffff;
+            z-index: 9;
+            width: 100%;
+        }
+
+        body{
+            margin-bottom: 50px;
+
+        }
+        .nav>ul{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .nav li{
+            width: 20%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .icon{
+            font-size: 36px;
+            margin: 5px 0;
+        }
+        .nav p{
+            color: #000;
+            line-height: 26px;
+            font-size: 20px;
+            letter-spacing: 3px;
+            padding-top: 10px;
+            padding-bottom: 40px;
+            color: #808080;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .a{
+            background-color: #fb7649; 
+            color: #808080;
+            border: none;
+            border-radius: 15px; 
+            cursor: pointer;
+            width: 100px;
+            height: 45px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        #home .icon {
+    font-size: 24px; 
+    display: none; 
+    margin-left: 22px;
+}
+
+#home .aaa {
+    color: #808080;
+    font-size: 20px;
+    margin: 0; 
+    display: block; 
+    margin-left: 20px;
+}
+
+#home .aaa.small-font {
+    font-size: 12px; 
+  
+  
+}
+    </style>
+</head>
+<body>
+    <div class="diyizhi">
+        <div class="luosi"><svg class="icon" aria-hidden="true" id="bbu">
+            <use xlink:href="#icon-chilun
+            "></use>
+          </svg>
+        </div>
+        </div>
+<!-- 第一个盒子结束 -->
+<!-- 第二个盒子结束 -->
+<div class="kkd-card">
+    <div class="kkd-info">
+        <a href="./Detail.html">
+        <img class="kkd-image" src="./img/611.jpg"  width="50" height="50">
+        <div></a>
+            <div class="username-and-badge">
+                <span class="username">用户名实践善良</span>
+                <div class="level-badge">Lv1</div>
+            </div>
+            <div class="kkd-stats">粉丝 0 | 关注 0 | 获赞 0</div>
+        </div>
+    </div>
+    <button class="button">个人主页 ></button>
+   <!--  第三个盒子开始 -->
+   
+</div>
+</div>
+<div class="badge-container">
+    <div class="badge lv-badge">
+        <div class="icon lv-icon">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-lev-copy"></use>
+            </svg>
+        </div>
+        <div class="text-container">
+            <div class="text">Lv等级</div>
+            <div class="sub-text">写评价助升级</div>
+        </div>
+    </div>
+    <div class="badge vip-badge">
+        <div class="icon vip-icon">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-VIP"></use>
+            </svg>
+           
+        </div>
+        <div class="text-container">
+            <div class="text">VIP俱乐部</div>
+            <div class="sub-text">写评价享特权</div>
+        </div>
+    </div>
+    <div class="badge lightning-badge">
+        <div class="icon lightning-icon">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-a-haodianliangF89D3D-copy"></use>
+            </svg>
+        </div>
+        <div class="text-container">
+            <div class="text">签到达人中心</div>
+            <div class="sub-text">写笔记做达人</div>
+        </div>
+    </div>
+</div>
+<!-- 第一栏 -->
+<div class="icon-grid">
+    <div class="icon-item">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-shoucang
+            "></use>
+          </svg>
+        <p>收藏</p>
+    </div>
+   
+    <div class="icon-item">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-daipingjia-copy"></use>
+          </svg>
+        <p>待评价</p>
+    </div>
+        <div class="icon-item">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-zuijinliulan-copy
+                "></use>
+              </svg>
+            <p>最近浏览</p>
+        </div>
+            <div class="icon-item">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-caogaoxiang-copy
+                    "></use>
+                  </svg>
+                <p>草稿箱</p>
+            </div>
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dingdan
+                        "></use>
+                      </svg>
+                    <p>订单</p>
+                </div>
+                    <div class="icon-item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhds-ev--copy"></use>
+                          </svg>
+                        <p>卡劵</p>
+                    </div>
+                        <div class="icon-item">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shejiaotubiao-43-copy
+                                "></use>
+                              </svg>
+                            <p>积分</p>
+                        </div>
+                        <div class="icon-item">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-qianbao-copy"></use>
+                              </svg>
+                            <p>钱包</p>
+                  </div>                 
+    </div>  
+</div>
+<div id="carousel" class="carousel">
+   
+    <div class="qer-mll">
+      
+        <div class="slide">
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-hongbao
+                        "></use>
+                      </svg>
+                    <p>签到红包</p>
+                </div>
+               
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dan"></use>
+                      </svg>
+                    <p>限时免单</p>
+                </div>
+                    <div class="icon-item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-VIP_icon_tiqianjieqing100"></use>
+                          </svg>
+                        <p>免费试</p>
+                    </div>
+                        <div class="icon-item">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-dituleiditu"></use>
+                              </svg>
+                            <p>我的足迹</p>
+                        </div>
+                            <div class="icon-item">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-lianxikefu
+                                    "></use>
+                                  </svg>
+                                <p>联系客服</p>
+                            </div>
+                                <div class="icon-item">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-total-score
+                                        "></use>
+                                      </svg>
+                                    <p>贡献商户信息</p>
+                                </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-xunzhang
+                                            "></use>
+                                          </svg>
+                                        <p>我的勋章</p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-zhibo
+                                            "></use>
+                                          </svg>
+                                        <p>看视频得奖励</p>
+                                    </div>                 
+                </div>  
+        </div>
+       
+        <div class="slide">
+            
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dianzan"></use>
+                      </svg>
+                    <p>赞过</p>
+                </div>
+               
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-judge-full
+                        "></use>
+                      </svg>
+                    <p>大众评审</p>
+                </div>
+                    <div class="icon-item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-EF"></use>
+                          </svg>
+                        <p>官方认证</p>
+                    </div>
+                        <div class="icon-item">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-dingdan"></use>
+                              </svg>
+                            <p>发票助手</p>
+                        </div>
+                            <div class="icon-item">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-a-16-4zhiyuantongxing
+                                    "></use>
+                                  </svg>
+                                <p>美团公益</p>
+                            </div>
+                                <div class="icon-item">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-xunzhang
+                                        "></use>
+                                      </svg>
+                                    <p>诚信分</p>
+                                </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-help"></use>
+                                          </svg>
+                                        <p>入驻美团点评</p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-qi1"></use>
+                                          </svg>
+                                        <p>企业服务</p>
+                                    </div>                 
+                </div>  
+        </div>
+       
+        <div class="slide">
+            <div class="icon-grid">
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dianpu2"></use>
+                      </svg>
+                    <p>我的店铺</p>
+                </div>
+               
+                <div class="icon-item">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-F7377D0C42335F33"></use>
+                      </svg>
+                    <p></p>
+                </div>
+                    <div class="icon-item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-"></use>
+                          </svg>
+                        <p></p>
+                    </div>
+                        <div class="icon-item">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-"></use>
+                              </svg>
+                            <p></p>
+                        </div>
+                            <div class="icon-item">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-
+                                    "></use>
+                                  </svg>
+                                <p></p>
+                            </div>
+                                <div class="icon-item">
+                                    <svg class="icon" aria-hidden="true">
+                                        <use xlink:href="#icon-"></use>
+                                      </svg>
+                                    <p></p>
+                                </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#"></use>
+                                          </svg>
+                                        <p></p>
+                                    </div>
+                                    <div class="icon-item">
+                                        <svg class="icon" aria-hidden="true">
+                                            <use xlink:href="#icon-"></use>
+                                          </svg>
+                                        <p></p>
+                                    </div>                 
+                </div>  
+        </div>  
+    </div>
+    <div class="carousel-indicators">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</div>
+<!-- 轮播图结束 -->
+<div class="text-with-lines">你可能还喜欢</div>
+<!-- 你可能还喜欢结束 -->
+<!-- 最后的盒子 -->
+<div class="card-big">
+    <div class="card-container">
+        <a href="./post.html">
+      <img src="./img/632.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title">旅顺太阳沟景区</p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★★</span>
+          <span>￥34/人</span>
+        </div>
+        <span class="card-price">旅顺自然景观</span>
+        <span class="card-vvn">5km</span>
+      </div>
+    </div>
+</a>
+    <div class="card-container">
+      <img src="./img/669.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title">友好饭店</p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★</span>
+          <span>￥111/人</span>
+        </div>
+        <span class="card-price">高分饭店</span>
+        <span class="card-vvn">25km</span>
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="./img/627.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title"></p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★★</span>
+          <span>￥52/人</span>
+        </div>
+        <span class="card-price">星海自然景观</span>
+        <span class="card-vvn">15km</span>
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="./img/631.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title"></p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★★</span>
+          <span>￥34/人</span>
+        </div>
+        <span class="card-price">自然景观</span>
+        <span class="card-vvn">33km</span>
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="./img/628.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title">海上古堡</p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★★</span>
+          <span>￥788/人</span>
+        </div>
+        <span class="card-price">旅顺自然景观</span>
+        <span class="card-vvn">5km</span>
+      </div>
+    </div>
+    <div class="card-container">
+      <img src="./img/629.jpg" alt="景区img">
+      <div class="card-content">
+        <p class="card-title">颐和园秋天</p>
+        <div class="card-rating">
+          <span class="card-rating-stars">★★★★★</span>
+          <span>￥222/人</span>
+        </div>
+        <span class="card-price">自然景观</span>
+        <span class="card-vvn">522km</span>
+      </div>
+  </div>
+  <nav class="nav">
+    <ul>
+        <div id="home" onclick="changeHomeContent()">
+            <a href="./index.html">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-c041xiangxiajiantou-copy"></use>
+              </svg>
+            <p class="aaa">首页</p>
+        </a>
+        </div>
+        <div id="imageContainer"></div>
+        <li>
+            <a href="#">
+                <p id="video" onclick="changeColor('video')" style="color: #808080;">视频</p>
+            </a>
+        </li>
+        <li>
+            <div class="a">
+            <a href="./edit.html">
+                <p>+发笔记</p>
+            </a>
+        </div>
+        </li>
+        <li>
+            <a href="./message.html">
+                <p id="message" onclick="changeColor('message')" style="color: #808080;">消息</p>
+            </a>
+        </li>
+        <li>
+            
+                <p id="my" onclick="changeColor('my')" style="color: #808080;">我的</p>
+          
+        </li>
+    </ul>
+</nav>
+
+
+
+<script>
+    bbu.addEventListener("click",function(){
+      alert("您点错了，不好意思");
+        e.stopPropagation();
+    });
+     let currentSlideIndex = 0;
+function showSlides(n) {
+    let mll = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n >= mll.length) n = 0;
+    if (n < 0) n = mll.length - 1;
+
+    for (let i = 0; i < mll.length; i++) {
+        mll[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    mll[n].style.display = "block";
+    dots[n].className += " active";
+}
+
+function currentSlide(n) {
+    showSlides(currentSlideIndex = n);
+}
+
+showSlides(currentSlideIndex); 
+
+/* 来自于8-7的下导航坐标 */
+function changeColor(elementId) {
+    var text = document.getElementById(elementId);
+    if (text.style.color == 'rgb(128, 128, 128)'){ 
+        text.style.color ='#FB7649';
+    } else {
+        text.style.color='rgb(128, 128, 128)'; 
+    }
+}/* 表尾巴字体变色 */
+function changeHomeContent() {
+    var homeElement = document.getElementById('home');
+    var homeIcon = homeElement.querySelector('.icon');
+    var homeText = homeElement.querySelector('.aaa');
+    homeElement.style.backgroundColor = '#FFF2e9';
+    homeElement.style.borderRadius = '50%';
+    homeElement.style.width = '70px';
+    homeElement.style.height = '70px';
+    homeElement.style.lineHeight = '70px';/* 表尾巴圆点击变色 */
+    homeElement.style.marginLeft = '40px';  
+    homeIcon.style.display = 'block';
+    homeText.textContent = '推荐';
+    homeText.classList.add('small-font');
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>抖音风格的视频播放页面</title>
+    <script src="./font/iconfont.js"></script>
+    <style>
+ .icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .icons {
+            position: absolute;
+            bottom: 90px; 
+            right: 10px;
+            text-align: left;
+            font-size: 30px;
+        }
+
+        .icon1 {
+            display: block;
+            margin: 5px 0;
+            color: rgb(255, 255, 255); 
+            cursor: pointer;
+        }
+        .message {
+            position: absolute;
+            bottom: 150px; 
+           left: 10px;
+            text-align: left;
+            font-size: 20px;
+            color: #ffffff;
+        }
+        .fanhui{
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            color: #000;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="./img/IMG_2879.MP4" type="video/mp4">
+        </video>
+        <div class="icons">
+            <span class="icon1"> <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dianzan
+                "></use>
+              </svg><br>11</span> 
+            <span class="icon1"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shoucang-copy
+                "></use>
+              </svg><br>11</span> 
+            <span class="icon1"><svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-pinglun-copy
+                "></use>
+              </svg><br>124</span> 
+        </div>
+    </div>
+    <div class="message">@wuqinglin<br>阅江楼视野真好</div>
+<a href="./my.html"><div class="fanhui"> <</div></a>
+</body>
+</html>
